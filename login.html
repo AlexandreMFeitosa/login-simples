@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div class="container">
+        <div class="perfil-foto">
+            <img src="imagens/perfil-dog.jpg" alt="Foto de Perfil" width="100px">
+        </div>
+        <div class="texto-titulo">
+            <h2>LogIn!</h2>
+        </div>
+        
+        <div class="email">
+            <div class="email-texto">
+                E-mail:
+            </div>
+            <input type="text" class="input-email" placeholder="Seu e-mail">
+        </div>
+        
+        <div class="senha">
+            <div class="senha-texto">
+                Password:
+            </div>
+            <input type="password" class="input-senha" placeholder="Sua senha">
+        </div>
+        
+        <div class="button-login">
+            
+            <button class="btn" onclick="login()"><strong>Login</strong></button>
+        </div>
+        <div class="esqueceu-senha">
+            Did you forget your password?
+            <a href="#" class="reset">Reset Password</a>
+        </div>
+        <div class="criar-conta">
+            <span class="criar"><p><strong>Create Account</strong></p></span>
+        </div>
+    </div>
+<script>
+    function login () {
+        const senha1 = document.querySelector('.input-senha').value
+        const email1 = document.querySelector('.input-email').value
+        let regex = /[a-zA-Z]/
+
+        if(senha1.length === 0 || email1.length === 0) {
+            alert('Campo e-mail ou senha em branco !')
+        } else {
+            if (regex.test(senha1)) {
+                alert('Login realizado com sucesso !')
+            } else {
+                alert('Senha não valida, para sua   segurança, use pelo menos uma letra!')
+            }
+        } 
+    }
+</script>
+</body>
+</html>
