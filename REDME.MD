@@ -1,0 +1,1 @@
+# Um projeto simples com tela de login, onde podemos adicionar um e-mail, e uma senha, com um pequetrecho de javascript que ao clicar em LOGIN, ele dará algumas orientaçoes, para caso não preechar o campo e-mail e o campo senha , e também caso a senha tenha apenas numeros.
