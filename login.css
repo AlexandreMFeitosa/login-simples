@@ -1,0 +1,83 @@
+body {
+    background-image: url(https://img.freepik.com/vetores-gratis/espaco-dos-desenhos-animados-fundo-transparente-com-estrelas-coloridas-ceu-estrelado-vetor-noite_1110-892.jpg?w=740&t=st=1689091682~exp=1689092282~hmac=37303903b3437e0af8313ed36c6f44896ecc964d3d2ffbc6607420960284209d);
+    color: white;  
+}
+.container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    border: 2px solid orange;
+    border-radius: 25px;
+    width: 435px;
+    height: 550px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: rgb(22, 50, 124);
+    box-shadow: 15px 2px 15px 2px rgb(62, 62, 235);
+
+}
+.perfil-foto {
+    display: flex;
+    justify-content: center;
+}
+img {
+    border-radius: 150px;
+    border: 2px solid orange;
+}
+.texto-titulo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.email,.senha {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 5px;
+    margin: 15px;
+}
+.email-texto,.senha-texto {
+    display: flex;
+    justify-content: left;
+}
+
+.input-email,.input-senha{
+    width: 390px;
+    height: 35px;
+    border-radius: 8px;
+}
+.button-login {
+    display: flex;
+    justify-content: center;
+    margin: 15px;
+    
+}
+.btn {
+    width: 390px;
+    height: 35px;
+    border-radius: 8px;
+    border: hidden;
+    background-color: rgb(252, 93, 35);
+    cursor: pointer;
+}
+.esqueceu-senha {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    margin: 10px;
+}
+.criar-conta {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+}
+.criar {
+    color: rgb(250, 148, 32);
+}
+.reset {
+    color: white;
+}
